@@ -1,10 +1,221 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-<meta charset="UTF-8">
-<title>Test</title>
-</head>
+<html lang="en">
+<head>
+    <title>Caitlin Hennessy: Portfolio</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <!--TODO make favicon with initials-->
+    <link rel="shortcut icon" href="favicon.ico">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github acitivity css -->    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
 <body>
-<h1>Hello world!</h1>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container clearfix">                       
+            <img class="profile-image img-fluid float-left" src="assets/images/caitlin.png" alt="Caitlin Hennessy" width="150" />
+            <div class="profile-content float-left">
+                <h1 class="name">Caitlin Hennessy</h1>
+                <h2 class="desc">Data hacker and Python enthusiast</h2>  
+                <!--TODO center icons--> 
+                <ul class="social list-inline">                  
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/caitlin-f-hennessy/">
+                        <i class="fab fa-linkedin-in" title="LinkedIn"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a href="https://github.com/Caitlin-Hennessy">
+                        <i class="fab fa-github" title="GitHub"></i></a>
+                    </li>  
+                    <li class="list-inline-item"><a href="https://leetcode.com/pineapplemango/">
+                        <i class="fa fa-code" title="LeetCode"></i></a>
+                    </li>         
+                    <li class="list-inline-item"><a href="http://rosalind.info/users/pineapplesunflower/">
+                        <i class="fa fa-flask" title="Rosalind.info"></i></a>
+                    </li>              
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary float-right" href="mailto:hennessy.caitlin@gmail.com" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>
+                                Hi, I'm Caitlin! I'm a software developer living in the Seattle area. I'm passionate about using data to answer questions both big and small.
+                                My favorite languages are Python and Node.js, and I use Docker and AWS for deployment. In my spare time, I enjoy hiking in the Cascades and petting fluffy kitties. 
+                                Check out my projects below, and feel free to send me a message if you'd like to connect.
+                            </p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Projects</h2>
+                        <div class="content">    
+                                               
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="https://github.com/Caitlin-Hennessy/lipstick_analyzer" target="_blank">Lipstick Analyzer</a></h3>
+                                <p class="summary">Using Bayesian analysis to predict average ratings of MAC lipsticks</p>
+                                <div class="featured-image">
+                                    <a href="https://github.com/Caitlin-Hennessy/lipstick_analyzer" target="_blank">
+                                    <img class="img-fluid project-image" src="assets/images/projects/lipstick.png" alt="Lipstick Analyzer" />
+                                    </a>
+                                </div>
+                                    
+                                <div class="desc text-left">                                    
+                                    <p>As a makeup enthusiast, I love going to the MAC store and finding a great new lipstick. But as a scientist, I never go without researching the product reviews first. One of the biggest challenges when reading reviews on websites such as MakeupAlley is that it's easy to identify the most popular shades and the top rated shades. But I want to know what the best shades are, where "best" takes into account both the number of reviews and the average rating. </p>
+                                   
+                                <a class="writeup-continue" href="https://github.com/Caitlin-Hennessy/lipstick_analyzer">Read full writeup and view code</a>     
+                                </div><!--//desc--> 
+                            </div><!--//item-->
+
+                            <hr class="divider" />
+
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="https://github.com/Caitlin-Hennessy/gcmt_viewer" target="_blank">Global Centroid Moment Tensor data visualizer</a></h3>
+                                <p class="summary">Interactive map for visualization of earthquake data from the GCMT Catalog</p>
+                                <div class="featured-image">
+                                    <a href="https://github.com/Caitlin-Hennessy/gcmt_viewer" target="_blank">
+                                    <img class="img-fluid project-image" src="assets/images/projects/gcmt.png" alt="Global Centroid Moment Tensor data" />
+                                    </a>
+                                </div>
+                                    
+                                <div class="desc text-left">                                    
+                                    <p>Collaborated with a group of three software developers and one geology expert to convert a static-HTML page into a web app based on 
+                                        Node.js, Express, and MongoDB. We converted the earthquake data to GeoJSON format for ease of querying.
+                                         Rearchitecting the project this way reduced the average page load time by 500%. 
+                                        For consistency between production and development environments, we created Docker containers for the frontend code and database,
+                                        using docker-compose to link them together. See the app live <a href="http://earth-analysis.com/gcmt_viewer/gcmt_viewer.html" target="_blank">here</a>.
+                                    </p>
+                                    
+                                    <a class="writeup-continue" href="https://github.com/Caitlin-Hennessy/gcmt_viewer" target="_blank">Browse the source code</a>     
+                                </div><!--//desc--> 
+                            </div><!--//item-->
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                
+                </section><!--//section-->
+ 
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Redmond, WA</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">hennessy.caitlin@gmail.com</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <div class="level-bar">
+                                        Data science &amp; visualization                          
+                                    </div><!--//level-bar--> 
+                                    <p class="level-title">Python, pandas, NumPy, Matplotlib, Plotly.js, statistical algorithms, R</p>        
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <div class="level-bar">
+                                        Front-end development                          
+                                    </div><!--//level-bar--> 
+                                    <p class="level-title">React, JavaScript</p>        
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <div class="level-bar">
+                                        Back-end development                          
+                                    </div><!--//level-bar--> 
+                                    <p class="level-title">Node.js, C#, Java</p>        
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <div class="level-bar">
+                                        Data storage &amp; streaming                          
+                                    </div><!--//level-bar--> 
+                                    <p class="level-title">SQL, MongoDB, Elasticsearch, Kafka, Kinesis</p>        
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <div class="level-bar">
+                                        Deployment &amp; cloud services                          
+                                    </div><!--//level-bar--> 
+                                    <p class="level-title">Docker, container orchestration, infrastructure-as-code, AWS</p>        
+                                </div><!--//item-->
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">         
+                                <!--TODO align BS items-->             
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> B.S. Computer Science, 
+                                    <br>B.S. Mathematics</h3>
+                                <h4 class="university">University of Oregon <span class="year">(2011-2015)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out our commercial license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
 </body>
-</html>
+</html> 
