@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: 16px Raleway;
+}
+
+.hero h1 {
+  font: bold 60px "Open Sans", sans-serif;
+  margin-bottom: 15px;
+}
+
+.hero h3 {
+  font: normal 28px "Open Sans", sans-serif;
+}
+
+section h3.title {
+  font: normal 32px "Open Sans", sans-serif;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+section p {
+  max-width: 775px;
+  line-height: 2;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  min-height: 50vh;
+  color: white;
+}
+
+.hero .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  background-color: #80a3db;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+/****************/
+
+.summary {
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.summary img {
+  display: block;
+  height: 200px;
+}
+
+.summary p,
+.summary h3.title {
+  text-align: left;
+  padding: 0;
+}
+
+.summary .bio {
+  padding-left: 20px;
+}
+
+.skills {
+  display: none;
+}
+
+/***************/
+
+ul {
+  list-style: none;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -20px;
+}
+
+.grid li {
+  /* height: 350px; */
+  padding: 20px;
+  /* margin: 5px; */
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+  flex-basis: 50%;
+  /* border: 2px solid #3f51b5; */
+  /* outline: 2px solid #bbb;
+  outline-offset: -5px; */
+  background-color: white;
+}
+
+.li-inner {
+  padding: 20px;
+}
+
+.grid li h4 {
+  text-align: center;
+  font-weight: bold;
+  padding: 0 0 10px 0;
+}
+
+.grid li img {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.grid li p {
+  margin: 0;
+  padding: 10px 0 0 0;
+  line-height: 1.5;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* .grid li.small {
+  flex-basis: 45%;
+}
+
+.grid li.large {
+  flex-basis: 45%;
+} */
+
+hr {
+  width: 250px;
+  height: 1px;
+  background-color: #333;
+  border: 0;
+  margin-bottom: 50px;
+}
+
+.projects p {
+  margin-top: 0;
+}
+
+.projects {
+  background-color: rgb(218, 227, 231);
+}
