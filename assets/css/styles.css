@@ -11,17 +11,21 @@ html {
 }
 
 .hero h1 {
-  font: bold 60px "Open Sans", sans-serif;
+  /* font-size: 60px; */
+  /* font-weight: bold; */
+  font: normal 60px "Open Sans", sans-serif;
   margin-bottom: 15px;
 }
 
 .hero h3 {
-  font: normal 28px "Open Sans", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  /* font: normal 28px "Open Sans", sans-serif; */
 }
 
 section h3.title {
   font: normal 32px "Open Sans", sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -83,7 +87,32 @@ section {
 }
 
 .skills {
-  display: none;
+  display: flex;
+  margin-top: 10px;
+}
+
+.skills li {
+  text-align: center;
+  /* border: 2px solid rgb(218, 227, 231); */
+  flex-basis: 25%;
+  padding: 5px;
+  /* background-color: green; */
+}
+
+.skills li h4 {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.skills li i {
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.skills li p {
+  line-height: 1.5;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 /***************/
@@ -120,8 +149,9 @@ ul {
 }
 
 .grid li h4 {
+  font: lighter 18px "Open Sans", sans-serif;
   text-align: center;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 0 0 10px 0;
 }
 
@@ -131,9 +161,13 @@ ul {
   margin: auto;
 }
 
+.bordered {
+  border: 1px solid rgb(218, 227, 231);
+}
+
 .grid li p {
   margin: 0;
-  padding: 10px 0 0 0;
+  padding: 20px 0 0 0;
   line-height: 1.5;
   font-size: 14px;
   text-align: left;
@@ -161,4 +195,17 @@ hr {
 
 .projects {
   background-color: rgb(218, 227, 231);
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #333;
+  text-decoration: underline;
 }

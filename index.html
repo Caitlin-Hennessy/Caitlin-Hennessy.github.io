@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script
+      src="https://kit.fontawesome.com/bf368f505d.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <section class="hero">
       <div
         class="background-image"
-        style="background-image: url('assets/img/img2.JPG');"
+        style="background-image: url('assets/img/IMG_1315.jpg');"
       ></div>
       <div class="hero-content-area">
         <h1>Caitlin Hennessy</h1>
@@ -31,7 +31,8 @@
             <a
               href="https://www.udemy.com/course/the-advanced-web-developer-bootcamp"
               >Advanced Web Developer Bootcamp</a
-            >. Also volunteering as a section leader for Stanford's
+            >
+            and volunteering as a section leader for Stanford's
             <a
               href="https://engineering.stanford.edu/news/free-coding-education-time-covid-19"
               >Code in Place</a
@@ -43,6 +44,7 @@
 
       <ul class="skills">
         <li>
+          <i class="fas fa-chart-bar fa-2x"></i>
           <h4>Data science & visualization</h4>
           <p>
             Python, pandas, NumPy, Matplotlib, Plotly.js, statistical algorithms
@@ -50,16 +52,19 @@
         </li>
 
         <li>
+          <i class="fa fa-laptop-code fa-2x"></i>
           <h4>Web development</h4>
           <p>React, JavaScript, Node.js</p>
         </li>
 
         <li>
+          <i class="fas fa-database fa-2x"></i>
           <h4>Data storage & streaming</h4>
           <p>SQL, MongoDB, Elasticsearch, Kafka, Kinesis</p>
         </li>
 
         <li>
+          <i class="fas fa-cloud fa-2x"></i>
           <h4>Deployment & cloud services</h4>
           <p>Docker, container orchestration, infrastructure-as-code, AWS</p>
         </li>
@@ -73,22 +78,36 @@
       <ul class="grid">
         <li>
           <div class="li-inner">
-            <h4>Commute time visualizer</h4>
-            <img src="assets/img/heatmap.png" />
+            <a
+              class="no-decoration"
+              href="https://github.com/Caitlin-Hennessy/commute_time_visualizer"
+              ><h4>
+                Graphing traffic data from Google Maps Distance Matrix API
+              </h4></a
+            >
+            <img class="bordered" src="assets/img/heatmap.png" />
             <p>
               Visualizations of traffic data from the Google Maps API throughout
               the day corresponding to my commute route: home (downtown Redmond)
               to Microsoft, Microsoft to Pro Club Bellevue, Pro Club to home.
               This project is a sandbox for experimenting with time series and
               heat map displays.
+              <a
+                href="https://github.com/Caitlin-Hennessy/commute_time_visualizer"
+                >GitHub</a
+              >
             </p>
           </div>
         </li>
 
         <li>
           <div class="li-inner">
-            <h4>UO department events calendar</h4>
-            <img src="assets/img/calendar.png" />
+            <a
+              class="no-decoration"
+              href="https://github.com/Caitlin-Hennessy/calendar-app"
+              ><h4>UO department events calendar</h4></a
+            >
+            <img class="bordered" src="assets/img/calendar.png" />
             <p>
               Each department at the University of Oregon lists its events such
               as dissertations, lectures and seminars, and performances on its
@@ -96,17 +115,29 @@
               the whole university at once. This app demonstrates a proof of
               concept where events are scraped from department websites with
               Python and BeautifulSoup, stored in a Mongo database, and
-              displayed in a calendar with tui.calendar. The POC shows only
-              computer science department events but it would be straightforward
-              to add more by extending scraper.py.
+              displayed in a calendar with
+              <a href="https://ui.toast.com/tui-calendar/">tui.calendar</a>. The
+              POC shows only computer science department events but it would be
+              straightforward to add more by extending scraper.py.
+              <a href="https://github.com/Caitlin-Hennessy/calendar-app"
+                >GitHub</a
+              >
             </p>
           </div>
         </li>
 
         <li>
           <div class="li-inner">
-            <h4>Lipstick analyzer</h4>
-            <img src="assets/img/lipstick.jpg" />
+            <a
+              class="no-decoration"
+              href="https://github.com/Caitlin-Hennessy/lipstick_analyzer"
+              ><h4>
+                Analyzing lipstick review data with Bayesian regression
+              </h4></a
+            >
+            <img
+              src="assets/img/four-aligned-assorted-color-lipsticks-1625037.jpg"
+            />
             <p>
               As a makeup enthusiast, I love going to the MAC store and finding
               a great new lipstick. But as a scientist, I never go without
@@ -116,13 +147,20 @@
               rated shades. But I want to know what the best shades are, where
               "best" takes into account both the number of reviews and the
               average rating.
+              <a href="https://github.com/Caitlin-Hennessy/lipstick_analyzer"
+                >GitHub</a
+              >
             </p>
           </div>
         </li>
 
         <li>
           <div class="li-inner">
-            <h4>Global Centroid Moment Tensor data visualizer</h4>
+            <a
+              class="no-decoration"
+              href="https://github.com/Caitlin-Hennessy/gcmt_viewer"
+              ><h4>Visualizing GCMT data with Leaflet.js and Mapbox.js</h4></a
+            >
             <img src="assets/img/gcmt.png" />
             <p>
               Collaborated with a group of three software developers and one
@@ -132,7 +170,10 @@
               this way reduced the average page load time by 500%. For
               consistency between production and development environments, we
               created Docker containers for the frontend code and database,
-              using docker-compose to link them together. See the app live here.
+              using docker-compose to link them together.
+              <a href="https://github.com/Caitlin-Hennessy/gcmt_viewer"
+                >GitHub</a
+              >
             </p>
           </div>
         </li>
