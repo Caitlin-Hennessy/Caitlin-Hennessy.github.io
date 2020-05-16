@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:200");
 
+/******* GENERAL ************/
+
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +12,43 @@ html {
   font: 16px Raleway;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+h3.title {
+  font: normal 32px "Open Sans", sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  max-width: 775px;
+  line-height: 2;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/******* HERO STYLES *************/
+
 .hero h1 {
-  /* font-size: 60px; */
-  /* font-weight: bold; */
   font: normal 60px "Open Sans", sans-serif;
   margin-bottom: 15px;
 }
@@ -20,21 +56,6 @@ html {
 .hero h3 {
   font-size: 28px;
   font-weight: bold;
-  /* font: normal 28px "Open Sans", sans-serif; */
-}
-
-section h3.title {
-  font: normal 32px "Open Sans", sans-serif;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-section p {
-  max-width: 775px;
-  line-height: 2;
-  padding: 0 20px;
-  margin-bottom: 30px;
-  text-align: center;
 }
 
 .hero {
@@ -56,18 +77,12 @@ section p {
   background-color: #80a3db;
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
-}
-
-/****************/
+/******** ABOUT ME ********/
 
 .summary {
   width: 80%;
   display: flex;
+  /* flex-wrap: wrap; */
   align-items: center;
 }
 
@@ -86,17 +101,18 @@ section {
   padding-left: 20px;
 }
 
+/************ SKILLS **************/
+
 .skills {
   display: flex;
   margin-top: 10px;
+  flex-wrap: wrap;
 }
 
 .skills li {
   text-align: center;
-  /* border: 2px solid rgb(218, 227, 231); */
   flex-basis: 25%;
   padding: 5px;
-  /* background-color: green; */
 }
 
 .skills li h4 {
@@ -115,7 +131,15 @@ section {
   margin-bottom: 10px;
 }
 
-/***************/
+/********* PROJECTS ******/
+
+.projects p {
+  margin-top: 0;
+}
+
+.projects {
+  background-color: rgb(218, 227, 231);
+}
 
 ul {
   list-style: none;
@@ -124,23 +148,17 @@ ul {
 .grid {
   width: 100%;
   display: flex;
-  /* flex-direction: row; */
   flex-wrap: wrap;
   justify-content: space-between;
   margin: -20px;
 }
 
 .grid li {
-  /* height: 350px; */
   padding: 20px;
-  /* margin: 5px; */
   background-clip: content-box;
   background-size: cover;
   background-position: center;
   flex-basis: 50%;
-  /* border: 2px solid #3f51b5; */
-  /* outline: 2px solid #bbb;
-  outline-offset: -5px; */
   background-color: white;
 }
 
@@ -151,7 +169,6 @@ ul {
 .grid li h4 {
   font: lighter 18px "Open Sans", sans-serif;
   text-align: center;
-  /* font-weight: bold; */
   padding: 0 0 10px 0;
 }
 
@@ -159,10 +176,6 @@ ul {
   width: 90%;
   display: block;
   margin: auto;
-}
-
-.bordered {
-  border: 1px solid rgb(218, 227, 231);
 }
 
 .grid li p {
@@ -173,13 +186,9 @@ ul {
   text-align: left;
 }
 
-/* .grid li.small {
-  flex-basis: 45%;
+.bordered {
+  border: 1px solid rgb(218, 227, 231);
 }
-
-.grid li.large {
-  flex-basis: 45%;
-} */
 
 hr {
   width: 250px;
@@ -189,23 +198,30 @@ hr {
   margin-bottom: 50px;
 }
 
-.projects p {
-  margin-top: 0;
-}
+@media (max-width: 800px) {
+  section {
+    padding: 50px 20px;
+  }
 
-.projects {
-  background-color: rgb(218, 227, 231);
-}
+  .grid li {
+    flex-basis: 100%;
+  }
 
-.no-decoration {
-  text-decoration: none;
-}
+  .skills li {
+    flex-basis: 50%;
+  }
 
-a {
-  color: black;
-}
+  .summary {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-a:hover {
-  color: #333;
-  text-decoration: underline;
+  .summary .bio {
+    margin-top: 20px;
+    padding-left: 0;
+  }
+
+  .summary h3.title {
+    text-align: center;
+  }
 }
